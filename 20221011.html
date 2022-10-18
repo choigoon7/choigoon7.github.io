@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 폼</title>
+<script>
+
+function showVal(value) {
+
+  document.getElementById("test").style.opacity = value;
+
+}
+
+</script>
+</head>
+<body>
+
+<h3 >로그인 폼</h3>
+<hr>
+
+<form>
+   <fieldset>
+       <legend>Login</legend>
+       <label for="UserName">UserName</label>
+       <input type="teLoginxt" id="UserName">&nbsp;
+       <label for="PassWord">PassWord</label>
+       <input type="password" id="PassWord">       
+   </fieldset>
+</form>
+<hr>
+
+<h3 >도형서식 폼</h3>
+<hr>
+
+<form>
+   <fieldset>
+       <legend>도형서식 입력</legend>
+        <label> 선종류
+           <select>
+               <option>선없음</option>
+               <option>실선</option>
+               <option>점선</option>
+           </select>
+        </label>
+
+        <br>
+
+        <label> 선두깨
+            <input type="number" min="0.0" max="10.0" step="0.5">    
+        </label>
+        <label> 선색
+            <input type="color" value="#00BFFF">    
+        </label>
+            
+        <br>
+
+        <label> 투명도(0~100)
+            <input type="range" min="0" max="100" chan onchange="showVal( this.value / 100)">           
+        </label>
+        <label id="test">텍스트입니다.</label>
+
+   </fieldset>
+</form>
+
+
+</body>
+</html>
