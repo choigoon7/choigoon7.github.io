@@ -1,4 +1,4 @@
-const clock = document.querySelector("h2#clock");
+//const clock = document.querySelector("h2#clock");
 
 function diffDay() {
 
@@ -14,7 +14,7 @@ function diffDay() {
     const min = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
     const sec = Math.floor((gap % (1000 * 60)) / 1000);
 
-    clock.innerText = "D-DAY까지 " + day + "일 " + hour + "시간 " + min + "분 " + sec + "초 남았습니다.";
+    document.getElementById("clock").innerText = "D-DAY까지 " + day + "일 " + hour + "시간 " + min + "분 " + sec + "초 남았습니다.";
     //document.getElementById("count").innerHTML = "D-DAY까지 " + day + "일 " + hour + "시간 " + min + "분 " + sec + "초 남았습니다.";
 
 }
