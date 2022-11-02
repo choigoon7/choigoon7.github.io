@@ -22,7 +22,7 @@
 		background: slategray;
 		float: left;
 	    bottom: 0;
-	    left: 0;
+	    left: 0;	    
 	}
 	
 	main{
@@ -44,4 +44,14 @@
   		bottom: 0;
 	    left: 0;
 	    padding: 0;
+	}
+
+	nav>ul>li{
+		font-size: x-large;
+		margin-bottom: 5px;
+	}
+
+	header>h4{
+		margin-left: 10px;
+		font-size: medium;
 	}
