@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let daysLength = (Math.ceil((doMonth.getDay() + lastDate.getDate()) / 7) * 7) - doMonth.getDay();
 
         // @param 달력 출력
+
         // @details 시작값은 1일을 직접 지정하고 요일값( doMonth.getDay() )를 빼서 마이너스( - )로 for문을 시작한다.
         for(let day = 1 - doMonth.getDay(); daysLength >= day; day++) {
 
@@ -64,9 +65,39 @@ document.addEventListener("DOMContentLoaded", function() {
             if(Math.sign(day) == 1 && lastDate.getDate() >= day) {
 
 
-                // @param 평일 날짜 데이터 삽입
-
+                // @param 평일 날짜 데이터 삽입           
                 column.innerText = autoLeftPad(day, 2);
+                
+                // 이벤트
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="09"  && autoLeftPad(day, 2) == "05")
+                {                  
+                  column.innerText += "\n임테기 두줄 확인";
+                }
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="09"  && autoLeftPad(day, 2) == "14")
+                {                  
+                  column.innerText += "\n처음 병원 방문";
+                }
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="09"  && autoLeftPad(day, 2) == "19")
+                {                  
+                  column.innerText += "\n산전검사";
+                }
+
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="09"  && autoLeftPad(day, 2) == "26")
+                {                  
+                  column.innerText += "\n<6주3일>";
+                }
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="10"  && autoLeftPad(day, 2) == "12")
+                {                  
+                  column.innerText += "\n<8주5일>";
+                }
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="10"  && autoLeftPad(day, 2) == "27")
+                {                  
+                  column.innerText += "\n<10주6일>";
+                }
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="11"  && autoLeftPad(day, 2) == "04")
+                {                  
+                  column.innerText += "\n<12주>\n1차 기형아검사";
+                }
 
 
                 // @param 일요일인 경우
@@ -148,6 +179,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
 
+            
+            
 
             dom++;
 
