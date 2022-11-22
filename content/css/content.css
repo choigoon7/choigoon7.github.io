@@ -1,0 +1,57 @@
+html,body{
+		width: 100vw;
+		height: 100vh;
+		padding: 0;
+		overflow: hidden;
+		margin: 0;
+		top: 0;
+	}
+
+header{
+		width: 100vw;
+		height: 5vh;
+		background: white;;
+		bottom: 0;
+	    left: 0;	    
+	}
+	
+main{
+		width: 100vw;
+		height: 95vh;
+		background: white;
+		float: left;
+	    bottom: 0;
+	    left: 0;
+	}
+	
+div{
+		margin: 20px;
+	}
+
+img{
+		width: 50vw;
+		height: 50vh;
+	}
+
+	.input-text{
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+        padding: 7px;
+        background-color:rgb(84, 223, 75);
+        position:relative;
+        top: 0px;
+        left:6px;
+      }     
+      .input{
+        width:200px;
+        height:30px;
+        border: 2px solid rgb(78, 227, 119);
+      }
+      .button{
+        height:36px;
+        background-color:rgb(64, 219, 52);
+        position:relative;
+        left:-7px;
+        top:0px;
+      }
