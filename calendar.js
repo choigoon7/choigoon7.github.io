@@ -90,6 +90,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 {                  
                   column.innerText += "\n<8주5일>";
                 }
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="10"  && autoLeftPad(day, 2) == "18")
+                {                  
+                  column.innerText += "\n태아보험가입";
+                }
                 if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="10"  && autoLeftPad(day, 2) == "27")
                 {                  
                   column.innerText += "\n<10주6일>";
@@ -98,7 +102,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 {                  
                   column.innerText += "\n<12주>\n1차 기형아검사";
                 }
-
+                if ( today.getFullYear() =="2022" &&  autoLeftPad((today.getMonth() + 1), 2) =="12"  && autoLeftPad(day, 2) == "01")
+                {                  
+                  column.innerText += "\n<16주>\n2차 기형아검사";
+                }
 
                 // @param 일요일인 경우
                 if(dom % 7 == 1) {
